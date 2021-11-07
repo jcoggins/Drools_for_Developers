@@ -1,0 +1,23 @@
+package rules;
+
+import com.drools.model.Product;
+
+rule "Offer for Tea"
+	when
+		productObject: Product(type=="Packaged tea")
+	then
+		productObject.setGst(5);
+	end
+rule "Offer for Coffee"
+	when
+		productObject: Product(type=="Packaged coffee")
+	then
+		productObject.setGst(10);
+	end
+rule "Offer for Chicken"
+	when
+		productObject: Product(type=="Packaged chicken")
+	then
+		productObject.setGst(12);
+	end
+	

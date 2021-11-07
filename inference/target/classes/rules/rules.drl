@@ -1,0 +1,22 @@
+package rules
+
+import inference.Person
+import inference.Department
+import inference.Customer
+
+rule "customer Inference"
+	when
+		$department: Department(name == "electronics")
+		$emp: Person(department == $department,student==true)
+	then
+	insert(new Customer($emp));
+end
+
+rule "give Customer Discount"
+	when
+		$emp: Person()
+		$customer: Customer(emp == $emp)
+	then
+	$emp.setMessage("get discount");
+	System.out.println($emp.getName()+" will "+$emp.getMessage());
+end

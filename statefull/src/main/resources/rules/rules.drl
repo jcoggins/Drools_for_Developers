@@ -1,0 +1,16 @@
+package rules;
+
+import statefull.Bill;
+
+rule "Counter shower 2"
+	when
+		$Counter : Bill()
+		accumulate (Bill() ; $cnt : count())
+	then
+		System.out.println("Congrats! You have visited "+$cnt+" times "
+		+"You will get a discount of Rs. "+
+		($Counter.getAmount()/$cnt)+" on the purchase of Rs. "+
+		$Counter.getAmount());
+	end
+
+	

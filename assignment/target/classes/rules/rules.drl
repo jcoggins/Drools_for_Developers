@@ -1,0 +1,40 @@
+package rules;
+
+import assignment.Gender;
+import assignment.Product;
+
+rule "All males go to the 4th floor"
+	when
+		 $gender: Gender(getGender()=="male");
+	then
+		System.out.println("All males go to the 4th floor");
+	end
+	
+rule "All females go to the 2nd floor"
+	when
+		 Gender(getGender()=="female");
+	then
+		System.out.println("All females go to the 2nd floor");
+	end
+	
+rule "Male gets reward"
+	when
+		 Gender(getGender()=="male") && Product(getBudget() >= 500/2);
+	then
+		System.out.println("Male gets reward");
+	end
+	
+rule "Female gets reward"
+	when
+		 Gender(getGender()=="female") && Product(getBudget() >= 500/3);
+	then
+		System.out.println("Female gets reward");
+	end
+	
+rule "No reward is available for male"
+	when
+		 Product(getBudget() < 500/2) && Gender(getGender()=="male");
+	then
+		System.out.println("No reward is available for male");
+	end
+	

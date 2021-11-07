@@ -1,0 +1,27 @@
+ package rules
+
+import forall.Budget
+import forall.Department
+import forall.Product
+
+rule "To find the best department"
+	when
+		c: Department()
+		b: Budget()
+		forall( $product : Product(price <= b.getBudget()) from c.products )
+	then
+		System.out.println(c.getName()+" section is suitable for you");
+		update(c);
+end
+
+rule "Sorry"
+lock-on-active true
+	when
+		c: Department()
+		b: Budget()
+		forall( $product : Product(price > b.getBudget()) from c.products )
+	then
+		System.out.println("No section is suitable for you");
+		update(c);
+end
+

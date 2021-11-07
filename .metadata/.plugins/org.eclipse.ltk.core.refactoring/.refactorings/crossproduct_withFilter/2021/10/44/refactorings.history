@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;decision-table/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;crossproduct_withFilter&apos;&#x0D;&#x0A;- Destination element: &apos;decision-table/src/main/resources&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     META-INF&#x0D;&#x0A;     rules" description="Copy folders" destination="=decision-table/src\/main\/resources=/maven.pomderived=/true=/" element1="src/main/resources/META-INF" element2="src/main/resources/rules" files="0" flags="589830" folders="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1635300930708" units="0" version="1.0"/>
+</session>

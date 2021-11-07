@@ -1,0 +1,14 @@
+package rules;
+
+import crossproduct.Product;
+import crossproduct.Department;
+
+rule "print cross product"
+	when
+		dept: Department();
+		prod: Product(dept.getName()=="grocery");		
+	then
+		System.out.println(dept.getName() + "::" + prod.getName());
+	end
+
+	

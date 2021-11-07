@@ -1,0 +1,29 @@
+package rules
+
+import activation_groups.Product;
+
+rule  "Offer for Tea and RETAILER"
+activation-group "x"
+	when
+		productObject: Product(type=="tea") && Product(coupon == "RETAILER")
+	then
+		System.out.println("You get a discount of 30%");
+	end
+
+rule  "Offer for Tea and FIRST50"
+activation-group "x"
+	when
+		productObject: Product(type=="tea") && Product(coupon=="FIRST50")
+	then
+		System.out.println("You get a discount of 50%");
+	end
+
+rule  "Offer for Tea"
+activation-group "x"
+	when
+		productObject: Product(type=="tea")
+	then
+		System.out.println("You get a discount of 10%");
+	end
+	
+	

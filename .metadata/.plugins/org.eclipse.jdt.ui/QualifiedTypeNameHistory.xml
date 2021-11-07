@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.kie.api.builder.KieFileSystem"/>
+    <fullyQualifiedTypeName name="org.kie.api.builder.KieBuilder"/>
+    <fullyQualifiedTypeName name="org.kie.api.builder.KieModule"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="org.kie.internal.io.ResourceFactory"/>
+    <fullyQualifiedTypeName name="org.kie.api.builder.KieRepository"/>
+    <fullyQualifiedTypeName name="org.kie.api.builder.ReleaseId"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="DroolsSpring.Main"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.kie.api.runtime.StatelessKieSession"/>
+    <fullyQualifiedTypeName name="salience.Department"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="assignment.Gender"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="inference.Person"/>
+    <fullyQualifiedTypeName name="org.kie.api.KieServices"/>
+    <fullyQualifiedTypeName name="org.kie.api.KieServices.Factory"/>
+    <fullyQualifiedTypeName name="org.kie.api.runtime.KieContainer"/>
+    <fullyQualifiedTypeName name="org.kie.api.runtime.KieSession"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="agenda_groups.Items"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+</qualifiedTypeNameHistroy>

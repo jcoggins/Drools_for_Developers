@@ -1,0 +1,49 @@
+package rules;
+
+import functions.Section;
+
+function String getFloor(int floor) {
+	return "You will have to go "+floor+" floor for shopping";
+}
+
+rule  "Using function0"
+	when
+		s:Section(section=="apparel")
+	then
+		System.out.println(getFloor(1));
+	end
+	
+rule  "Using function1"
+	when
+		s:Section(section=="electronics");
+	then
+	    System.out.println(getFloor(4));
+	end
+	
+rule  "Using function2"
+	when
+		s:Section(section=="shoes");
+	then
+	    System.out.println(getFloor(2));
+	end
+	
+rule  "Using function3"
+	when
+		s:Section(section=="grocery");
+	then
+	    System.out.println(getFloor(3));
+	end
+
+rule  "Using function4"
+	when
+		s:Section(section=="cutlery");
+	then
+	    System.out.println(getFloor(5));
+	end
+	
+rule  "Using function5"
+	when
+		s:Section(section=="stationary");
+	then
+	    System.out.println(getFloor(6));
+	end

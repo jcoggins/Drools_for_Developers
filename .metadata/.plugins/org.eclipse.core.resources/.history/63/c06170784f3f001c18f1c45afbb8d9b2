@@ -1,0 +1,40 @@
+package rules
+
+import inference.Person
+import inference.Department
+import inference.Customer1
+import inference.Customer2
+
+rule "Customer1 Truth Maintenance"
+	when
+		$department: Department(name == "electronics")
+		$emp: Person(department == $department,student==true)
+	then
+	insertLogical(new Customer1($emp));
+end
+
+rule "Customer2 Truth Maintenance"
+	when
+		$department: Department(name == "electronics")
+		$emp: Person(department == $department,student==true)
+	then
+	insertLogical(new Customer2($emp));
+end
+
+rule "give Customer1 Discount"
+	when
+		$emp: Person()
+		$customer1: Customer1(emp == $emp)
+	then
+	$emp.setMessage("get discount");
+	System.out.println($emp.getName()+" will "+$emp.getMessage());
+end
+
+rule "give Customer2 Discount"
+	when
+		$emp: Person()
+		$customer2: Customer2(emp == $emp)
+	then
+	$emp.setMessage("get discount");
+	System.out.println($emp.getName()+" will "+$emp.getMessage());
+end

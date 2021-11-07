@@ -1,0 +1,8 @@
+package agenda_groups;
+
+
+public class Product {
+	private int balance;
+	private Item item;
+
+}

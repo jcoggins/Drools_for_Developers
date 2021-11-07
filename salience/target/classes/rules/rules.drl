@@ -1,0 +1,34 @@
+package rules;
+
+import salience.Product;
+
+// Only student customers buying electronics products get discounts
+
+rule "Product not in Electronics Department" salience 10
+lock-on-active
+	when
+		$customer: Product("electronics" != department.getName());
+	then
+		$customer.setFlag(true);
+		update($customer);
+end	
+	
+
+rule "Customer not in Student Category" salience 5
+lock-on-active
+	when
+		$customer: Product(student==false);
+	then
+		$customer.setFlag(true);
+		update($customer);
+end
+	
+rule "Give discount"
+	when
+		$customer: Product(flag==false);
+	then
+		$customer.setMessage("will get cashback!");
+		System.out.println($customer.getName()+ " "+$customer.getMessage());
+end
+
+	

@@ -1,0 +1,53 @@
+package inference;
+
+import java.util.Scanner;
+
+import org.kie.api.KieServices;
+import org.kie.api.runtime.KieContainer;
+import org.kie.api.runtime.KieSession;
+
+public class Main {
+	public static void main(String[] args) {
+		System.err.close();
+		System.setErr(System.out);	
+		try {
+			KieServices ks = KieServices.Factory.get();
+			KieContainer kContainer = ks.getKieClasspathContainer();
+			KieSession kSession = kContainer.newKieSession("ksession-rule");
+			
+			System.out.print("How many customers will be there? ");
+			Scanner input = new Scanner(System.in);
+			int n = input.nextInt();
+			
+			Person[] persons;
+			persons = new Person[n];
+			
+			Department[] departments;
+			departments = new Department[n];
+			
+			for(int i=0; i<n; i++) {
+				Person person = new Person();
+				System.out.print("What is your name? ");
+				Scanner inputName = new Scanner(System.in);
+				String name = inputName.nextLine();
+				person.
+				
+				System.out.print("In which department do you want to visit? ");
+				Scanner inputDepartment = new Scanner(System.in);
+				
+				
+				
+			}
+			
+			kSession.insert(cheese);
+			kSession.insert(apple);
+			kSession.insert(grocery);
+			kSession.insert(essentials);
+			
+			kSession.fireAllRules();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}		
+	}
+}

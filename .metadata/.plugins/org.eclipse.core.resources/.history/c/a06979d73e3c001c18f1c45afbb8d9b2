@@ -1,0 +1,23 @@
+package inference;
+
+public class Customer {
+	private Person person;
+	private Person emp;
+
+	public Person getPerson() {
+		return person;
+	}
+
+	public void setPerson(Person person) {
+		this.person = person;
+	}
+
+	public Person getEmp() {
+		return emp;
+	}
+
+	public void setEmp(Person emp) {
+		this.emp = emp;
+	}
+	
+}

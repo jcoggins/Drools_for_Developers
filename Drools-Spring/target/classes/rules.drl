@@ -1,0 +1,18 @@
+package rules
+
+import com.droolsspring.Product;
+
+rule "Offer for Gold"
+  when
+  	$p:Product(type=="gold")
+  then
+    $p.setDiscount(10);
+end
+
+
+rule "Offer for Silver"
+  when
+    $p:Product(type=="silver")
+  then
+    $p.setDiscount(5);
+end

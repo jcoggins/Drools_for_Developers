@@ -1,0 +1,13 @@
+package rules;
+
+import stateless.Product;
+
+rule "Cannot get Discount?"
+	when
+		Product( amount < 100 );
+		$a : Product();
+	then
+		$a.setValid( false );
+	end
+
+	

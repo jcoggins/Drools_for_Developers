@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\jcog.000\Documents\Drools\xyz"/>
+			<item value="C:\Users\jcog.000\Documents\Drools\functions"/>
+			<item value="C:\Users\jcog.000\Documents\Drools\statefull"/>
+			<item value="C:\Users\jcog.000\Documents\Drools\Drools-Spring"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.forall"/>
+			<item value="com.insertLogical"/>
+			<item value="com.functions"/>
+			<item value="com.function"/>
+			<item value="com.agenda-groups"/>
+			<item value="com.activation-groups"/>
+			<item value="com.inference"/>
+			<item value="com.assignment"/>
+			<item value="com.decision-table"/>
+			<item value="com.crossproduct"/>
+			<item value="com.salience"/>
+			<item value="com.stateless"/>
+			<item value="com.statefull"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="forall"/>
+			<item value="insertLogical"/>
+			<item value="functions"/>
+			<item value="function"/>
+			<item value="agenda-groups"/>
+			<item value="activation-groups"/>
+			<item value="inference"/>
+			<item value="assignment"/>
+			<item value="decision-table"/>
+			<item value="crossproduct"/>
+			<item value="salience"/>
+			<item value="stateless"/>
+			<item value="statefull"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="DroolsSpring"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="DroolsSpring"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

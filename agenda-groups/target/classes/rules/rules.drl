@@ -1,0 +1,31 @@
+package rules
+
+import agenda_groups.Product;
+
+rule  "Thank you"
+salience 500
+	when
+		$amount: Product();
+	then
+		System.out.println("Thank you for visiting us!");
+	end
+	
+rule  "Check amount"
+agenda-group "check"
+salience 100
+	when
+		$amount: Product(item.getAmount() > balance);
+	then
+	    kcontext.getKnowledgeRuntime().getAgenda().getAgendaGroup("Insufficient Balance").setFocus();
+	end
+	
+rule  "Rule Insufficient Balance"
+agenda-group "Insufficient Balance"
+	when
+	    $amount: Product();
+	then
+		$amount.setInsufficientBalance(true);
+		System.out.println("Insufficient funds to buy this thing.");
+	end
+	
+

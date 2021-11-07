@@ -1,0 +1,19 @@
+package forall;
+
+public class Product {
+	private String name;
+	Product[] products;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Product[] getProducts() {
+		return products;
+	}
+	public void setProducts(Product[] products) {
+		this.products = products;
+	}	
+}
